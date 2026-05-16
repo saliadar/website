@@ -17,7 +17,15 @@ export default function Hero() {
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10 py-24 lg:py-0 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10 py-24 lg:py-0 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+
+        {/* Photo — shows on mobile at top, hidden on desktop */}
+        <div className="flex justify-center lg:hidden">
+          <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-grey-5 shadow-lg">
+            <img src="/stuart.jpg" alt="Stuart Saliadarre" className="w-full h-full object-cover object-top" />
+          </div>
+        </div>
+
         {/* Left — text */}
         <div>
           <p className="text-xs font-semibold tracking-widest2 text-grey-3 uppercase mb-8 animate-fade-in">
@@ -31,13 +39,13 @@ export default function Hero() {
             and Meta Ads strategies that drive real, measurable growth — not just vanity metrics.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up animate-delay-200">
-            <a
+            
               href="#contact"
               className="px-7 py-3.5 bg-ink text-white text-sm font-medium rounded-full hover:bg-grey-1 transition-colors duration-200 text-center"
             >
               Let&apos;s talk
             </a>
-            <a
+            
               href="#services"
               className="px-7 py-3.5 border border-grey-4 text-ink text-sm font-medium rounded-full hover:border-ink transition-colors duration-200 text-center"
             >
@@ -46,10 +54,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right — identity card */}
+        {/* Right — identity card (desktop only) */}
         <div className="relative hidden lg:flex justify-center animate-fade-in animate-delay-200">
           <div className="w-full max-w-sm border border-grey-5 rounded-2xl p-8 bg-white shadow-[0_4px_40px_rgba(0,0,0,0.06)]">
-            {/* Avatar */}
             <div className="w-20 h-20 rounded-full overflow-hidden border border-grey-5 mb-6">
               <img src="/stuart.jpg" alt="Stuart Saliadarre" className="w-full h-full object-cover object-top" />
             </div>
@@ -73,6 +80,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
       </div>
 
       {/* Scroll cue */}
