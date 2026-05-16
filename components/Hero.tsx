@@ -50,7 +50,9 @@ export default function Hero() {
         <div className="relative hidden lg:flex justify-center animate-fade-in animate-delay-200">
           <div className="w-full max-w-sm border border-grey-5 rounded-2xl p-8 bg-white shadow-[0_4px_40px_rgba(0,0,0,0.06)]">
             {/* Avatar placeholder */}
-            <div className="w-20 h-20 rounded-full bg-grey-6 border border-grey-5 flex items-center justify-center mb-6">
+    <div className="w-20 h-20 rounded-full overflow-hidden border border-grey-5 mb-6">
+  <img src="/stuart.jpg" alt="Stuart Saliadarre" className="w-full h-full object-cover object-top" />
+</div>
               <span className="text-2xl font-bold text-grey-3 select-none">SS</span>
             </div>
             <h2 className="text-xl font-semibold text-ink mb-1">Stuart Saliadarre</h2>
