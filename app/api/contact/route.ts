@@ -53,19 +53,18 @@ export async function POST(request: NextRequest) {
       <!DOCTYPE html>
       <html>
         <head>
-          <style>
-            body { font-family: Inter, Arial, sans-serif; background: #0a0a0f; color: #f0f0f5; margin: 0; padding: 0; }
-            .container { max-width: 600px; margin: 0 auto; background: #12121a; border-radius: 12px; overflow: hidden; }
-            .header { background: linear-gradient(135deg, #6c63ff, #5a52e0); padding: 32px 40px; }
-            .header h1 { color: #fff; font-size: 22px; font-weight: 700; margin: 0; }
-            .header p { color: rgba(255,255,255,0.8); font-size: 14px; margin: 6px 0 0; }
-            .body { padding: 36px 40px; }
-            .field { margin-bottom: 20px; }
-            .label { font-size: 12px; font-weight: 600; color: #6c63ff; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
-            .value { font-size: 15px; color: #f0f0f5; background: #1a1a26; border-radius: 8px; padding: 12px 16px; border-left: 3px solid #6c63ff; }
-            .message-value { white-space: pre-wrap; line-height: 1.6; }
-            .footer { padding: 20px 40px; border-top: 1px solid #2a2a3a; color: #9090a8; font-size: 12px; }
-          </style>
+         body { font-family: Arial, sans-serif; background: #f5f5f5; color: #1a1a1a; margin: 0; padding: 24px; }
+.container { max-width: 560px; margin: 0 auto; background: #ffffff; border-radius: 8px; border: 1px solid #e5e5e5; overflow: hidden; }
+.header { padding: 28px 32px; border-bottom: 1px solid #e5e5e5; }
+.header h1 { font-size: 18px; font-weight: 700; margin: 0 0 4px; color: #1a1a1a; }
+.header p { font-size: 13px; color: #888; margin: 0; }
+.body { padding: 28px 32px; }
+.field { margin-bottom: 18px; }
+.label { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
+.value { font-size: 15px; color: #1a1a1a; }
+.message-value { white-space: pre-wrap; line-height: 1.6; background: #f9f9f9; border-radius: 6px; padding: 12px 14px; border: 1px solid #e5e5e5; }
+.divider { border: none; border-top: 1px solid #e5e5e5; margin: 0; }
+.footer { padding: 16px 32px; color: #aaa; font-size: 12px; } 
         </head>
         <body>
           <div class="container">
