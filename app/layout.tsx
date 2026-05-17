@@ -78,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="color-scheme" content="light" />
+        <meta name="google-site-verification" content="WlyrmxIzKum9RSBQzcIdDFvUuRx-hjwj8FADWpgvdno" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
