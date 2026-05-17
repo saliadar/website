@@ -40,13 +40,14 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up animate-delay-200">
             
+                         <a
               href="#contact"
               className="px-7 py-3.5 bg-ink text-white text-sm font-medium rounded-full hover:bg-grey-1 transition-colors duration-200 text-center"
             >
               Let&apos;s talk
             </a>
             
-              href="#services"
+              <a href="#services"
               className="px-7 py-3.5 border border-grey-4 text-ink text-sm font-medium rounded-full hover:border-ink transition-colors duration-200 text-center"
             >
               See what I do
